@@ -1,0 +1,69 @@
+#productsListExpanded {
+  background-color: white;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#productsListDiv {
+  overflow: hidden;
+}
+#productsList {
+  display: flex;
+  margin-left: 95px;
+  gap: 18px;
+}
+#pl_left_scrollBtn_div {
+  background-color: white;
+  height: 355px;
+  width: 80px;
+  box-shadow: 24px 0px 12px -12px white;
+  position: absolute;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#pl_right_scrollBtn_div {
+  background-color: white;
+  height: 355px;
+  width: 80px;
+  box-shadow: -24px 0px 12px -12px white;
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.scrollBtn {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px 0px grey;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* position: absolute; */
+  cursor: pointer;
+  border: none;
+  user-select: none;
+}
+#left.scrollBtn {
+  left: 20px;
+}
+#right.scrollBtn {
+  right: 20px;
+}
+.scrollBtn:focus {
+  box-shadow: 0px 0px 5px 2px #007185ab;
+  outline: 0.2px solid #007185;
+}
+.scrollBtn img {
+  height: 25px;
+}

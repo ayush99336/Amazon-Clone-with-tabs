@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+}
+.component {
+  padding: 0px 10px;
+  height: 100%;
+  cursor: pointer;
+}
+.component:hover {
+  outline: 1px solid white;
+}
+#header p {
+  color: white;
+}
+.thin {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.377);
+  font-family: sans-serif;
+}
+.bold {
+  font-size: 16px;
+  font-weight: bold;
+}
+#header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  gap: 6px;
+  background-color: #131921;
+  padding: 5px 15px;
+  align-items: center;
+  justify-content: space-around;
+  height: 50px;
+}
+#header #logoDiv {
+  text-decoration: none;
+}
+#logo {
+  display: flex;
+  align-items: center;
+}
+#logoImage {
+  height: 38px;
+}
+#in {
+  font-size: 15px;
+  padding-top: 6px;
+}
+#location {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 2px;
+  align-items: center;
+}
+#locationIcon {
+  grid-row: 1 / span 2;
+  height: 16px;
+  padding-top: 14px;
+}
+#searchBarFlex {
+  display: flex;
+  outline: 2px solid transparent;
+  transition: border 0.3s;
+  flex-grow: 1;
+}
+.searchBarComponent {
+  height: 42px;
+}
+#searchFilter {
+  width: fit-content;
+  background-color: #e6e6e6;
+  border-radius: 4px 0px 0px 4px;
+  cursor: pointer;
+}
+#searchFilter:focus {
+  outline: none;
+}
+#searchBar {
+  width: 100%;
+}
+#searchbar:focus {
+  outline: none;
+}
+#searchBarLeft {
+  display: flex;
+}
+#searchBarLeft:focus {
+  outline: 2px solid orange;
+}
+#searchBarCenter {
+  cursor: pointer;
+  width: 100%;
+}
+#searchBarCenter:hover + #searchBarFlex {
+  outline: 2px solid orange;
+}
+#searchBarRight {
+  display: flex;
+}
+#searchBarRight div {
+  background-color: #febd69;
+  width: 40px;
+  border-radius: 0px 4px 4px 0px;
+  cursor: pointer;
+}
+#searchBarRight div:hover {
+  outline: 2px solid orange;
+}
+#searchIcon {
+  height: 30px;
+  padding-top: 3px;
+  padding-left: 4px;
+}
+select {
+  color: grey;
+  padding-left: 5px;
+  width: 200px;
+}
+option {
+  color: black;
+}
+#h-lang {
+  display: flex;
+  gap: 5px;
+  font-weight: bold;
+  align-items: center;
+}
+#h-lang img {
+  height: 14px;
+}
+#h-lang-selector {
+  width: 20px;
+  background-color: transparent;
+  border: none;
+}
+#dev-comm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  text-decoration: none;
+}
+#dev-comm span {
+  font-size: small;
+}
+#dev-comm p {
+  font-size: 17px;
+}
+#dev-comm img {
+  height: 50px;
+}
+#dev-comm div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#cart {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  text-decoration: none;
+}
+#cart img {
+  height: 35px;
+}
+#cart p {
+  margin-top: auto;
+  margin-bottom: 5px;
+  margin-left: 1px;
+}
+#priceFilter {
+  width: fit-content;
+  background-color: #e6e6e6;
+  cursor: pointer;
+}
+#priceFilter:focus {
+  outline: none;
+}
+#cart-number {
+  position: absolute;
+  right: 12px;
+  bottom: 5px;
+  font-size: 24px;
+}
+#cart div {
+  position: relative;
+}
